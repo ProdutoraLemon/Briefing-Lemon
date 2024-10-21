@@ -1,0 +1,175 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário da Lemon</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class="background"></div> <!-- Fundo com animação -->
+        
+        <div class="container">
+            <header>
+                <div class="header-content">
+                    <!-- Logo -->
+                    <img src="logo1.png" alt="Logo" class="logo">
+                    
+                    <!-- Título -->
+                    <h1>Formulário de Briefing</h1>
+                </div>
+                <p>Preencha o formulário abaixo com todos os detalhes para a sua produção de vídeo.</p>
+            </header>        
+
+            <!-- Aqui está o formulário com o link do Formspree -->
+            <form id="briefingForm" action="https://formspree.io/f/xeoqoqrr" method="POST">
+                <!-- Seção 1: Informações Pessoais -->
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <div class="form-group">
+                        <label for="nomeCompleto">Nome e Sobrenome</label>
+                        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Ex: João Silva" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Ex: joao@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone / WhatsApp</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
+                    </div>
+                </fieldset>
+
+                <!-- Seção 2: Ideia e Objetivo -->
+                <fieldset>
+                    <legend>Ideia e Objetivo</legend>
+                    <div class="form-group">
+                        <label for="ideiaPrincipal">IDEIA PRINCIPAL</label>
+                        <textarea id="ideiaPrincipal" name="ideiaPrincipal" placeholder="Descreva a sua ideia com a maior riqueza de detalhes..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="objetivo">OBJETIVO DA IDEIA</label>
+                        <textarea id="objetivo" name="objetivo" placeholder="O que se espera desse vídeo? Quais resultados são esperados?" required></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Seção 3: Público-alvo -->
+                <fieldset>
+                    <legend>Público-alvo</legend>
+                    <div class="form-group">
+                        <label for="publicoAlvo">QUAL SERÁ O PÚBLICO-ALVO?</label>
+                        <textarea id="publicoAlvo" name="publicoAlvo" placeholder="Quem irá assistir esse vídeo?" required></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Seção 4: Serviços Necessários -->
+                <fieldset>
+                    <legend>QUAIS SERVIÇOS VOCÊ PRECISA PARA FAZER O TRABALHO ACONTECER?</legend>
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <!-- Direção -->
+                            <div class="checkbox-item">
+                                <label for="direcao">Direção</label>
+                                <input type="checkbox" id="direcao" name="servicos" value="Direção">
+                            </div>
+                
+                            <!-- Roteiro -->
+                            <div class="checkbox-item">
+                                <label for="roteiro">Roteiro</label>
+                                <input type="checkbox" id="roteiro" name="servicos" value="Roteiro">
+                            </div>
+                
+                            <!-- Direção de Arte -->
+                            <div class="checkbox-item">
+                                <label for="direcaoArte">Direção de Arte (cenários/objetos de cena)</label>
+                                <input type="checkbox" id="direcaoArte" name="servicos" value="Direção de Arte">
+                            </div>
+                
+                            <!-- Pesquisa e Locação -->
+                            <div class="checkbox-item">
+                                <label for="pesquisa">Pesquisa e locação para gravação</label>
+                                <input type="checkbox" id="pesquisa" name="servicos" value="Pesquisa e Locação">
+                            </div>
+                
+                            <!-- Edição Instagram -->
+                            <div class="checkbox-item">
+                                <label for="edicaoInstagram">Edição de vídeo (principal - para Instagram)</label>
+                                <input type="checkbox" id="edicaoInstagram" name="servicos" value="Edição Instagram">
+                            </div>
+                
+                            <!-- Edição YouTube -->
+                            <div class="checkbox-item">
+                                <label for="edicaoYoutube">Edição de vídeo (principal - para YouTube)</label>
+                                <input type="checkbox" id="edicaoYoutube" name="servicos" value="Edição Youtube">
+                            </div>
+                
+                            <!-- Edição de Cortes -->
+                            <div class="checkbox-item">
+                                <label for="cortes">Edição de cortes (para redes sociais ou shorts do YouTube)</label>
+                                <input type="checkbox" id="cortes" name="servicos" value="Edição de Cortes">
+                            </div>
+                
+                            <!-- Design -->
+                            <div class="checkbox-item">
+                                <label for="design">Design (ID Visual)</label>
+                                <input type="checkbox" id="design" name="servicos" value="Design">
+                            </div>
+                
+                            <!-- Videografismo -->
+                            <div class="checkbox-item">
+                                <label for="videografismo">Videografismo (Motion Design - animações ou vinhetas)</label>
+                                <input type="checkbox" id="videografismo" name="servicos" value="Videografismo">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>            
+
+                <!-- Seção 5: Especificações e Referências -->
+                <fieldset>
+                    <legend>Especificações e Referências</legend>
+                    <div class="form-group">
+                        <label for="especificacoes">QUAIS AS ESPECIFICAÇÕES DO VÍDEO E DURAÇÃO DESEJADA?</label>
+                        <textarea id="especificacoes" name="especificacoes" placeholder="Descreva os formatos (1080p, 2k, 4k) e tempo desejado..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="referencias">REFERÊNCIAS PARA O VÍDEO</label>
+                        <textarea id="referencias" name="referencias" placeholder="Mande links ou descreva referências de vídeos que você gosta..."></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Seção 6: Obrigações, Limitações e Prazo -->
+                <fieldset>
+                    <legend>Detalhes Adicionais</legend>
+                    <div class="form-group">
+                        <label for="obrigacoes">QUAIS SÃO AS OBRIGATORIEDADES DO VÍDEO?</label>
+                        <textarea id="obrigacoes" name="obrigacoes" placeholder="Descreva todos os detalhes que não podem faltar nessa produção..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="limitacoes">QUAIS SÃO AS LIMITAÇÕES?</label>
+                        <textarea id="limitacoes" name="limitacoes" placeholder="Descreva suas limitações e dores para fazer essa produção acontecer..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="deadline">QUANDO PRETENDE RECEBER A 1ª VERSÃO PARA APROVAÇÃO?</label>
+                        <input type="date" id="deadline" name="deadline" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="informacoesAdicionais">INFORMAÇÕES ADICIONAIS</label>
+                        <textarea id="informacoesAdicionais" name="informacoesAdicionais" placeholder="Existe algo mais que queira informar para este projeto?"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Botão de Enviar -->
+                <div class="form-group action">
+                    <button type="submit" class="btn">Enviar Briefing</button>
+                </div>
+            </form>
+
+            <!-- Exibe o resultado do envio -->
+            <div id="result" class="result"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    </html>

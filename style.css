@@ -1,0 +1,193 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Preto profundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fdfd96; /* Amarelo-limão */
+}
+
+/* Fundo estilizado com animação */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(fundo8.jpeg) no-repeat center center/cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #1c1c1c;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* Estilo do cabeçalho com logo e título */
+.header-content {
+    display: flex;
+    align-items: center; /* Alinhar logo e título no centro verticalmente */
+    justify-content: center; /* Centralizar o conteúdo */
+    gap: 15px; /* Espaçamento entre a logo e o título */
+    margin-bottom: 20px;
+}
+
+/* Estilo para a logo */
+.logo {
+    width: 100px; /* Ajuste a largura da logo */
+    height: auto; /* Manter a proporção da imagem */
+}
+
+/* Título */
+header h1 {
+    color: #fdfd96;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #fdfd96;
+    margin-bottom: 40px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 2px solid #fdfd96;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-size: 1.5rem;
+    color: #fdfd96;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1rem;
+    color: #fdfd96;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    background-color: #2b2b2b;
+    color: #fff;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #fdfd96;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Organização vertical para os checkboxes */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza todo o grupo de checkboxes */
+    gap: 20px; /* Espaçamento entre checkboxes */
+}
+
+.checkbox-item {
+    display: flex;
+    flex-direction: column; /* Coloca o label acima do checkbox */
+    align-items: center; /* Centraliza o label e o checkbox */
+    background-color: #1a1a1a;
+    padding: 15px;
+    border: 1px solid #fdfd96;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px; /* Limitar a largura para telas grandes */
+}
+
+/* Centralizar o checkbox */
+.checkbox-item input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+.checkbox-item label {
+    font-size: 1rem;
+    color: #fdfd96;
+    text-align: center;
+}
+
+/* Botão de ação */
+.action {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #fdfd96;
+    color: #121212;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e4e400;
+}
+
+/* Mensagem de Resultado */
+.result {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #fdfd96;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .checkbox-group {
+        align-items: center; /* Centraliza todo o grupo no celular */
+    }
+
+    .checkbox-item {
+        width: 100%; /* A largura ocupa todo o espaço disponível */
+        max-width: 100%; /* Ajusta a largura no celular para não ficar muito pequeno */
+    }
+}
